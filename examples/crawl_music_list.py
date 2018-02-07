@@ -29,10 +29,10 @@ def crawl():
         for sel in selector.xpath('//div[@class="vol-list"]/div[@class="item"]'):
             #定义每个期刊需要抓的内容
             items={'name':'',
-                     'url':'',
-                     'vol':'',
-                     'attention_num':'',
-                    'comment_num':''
+                   'url':'',
+                   'vol':'',
+                   'attention_num':'',
+                   'comment_num':''
             }
             #具体要crawl的item需要利用xpath，结合页面源码来定位
             items['name']=''.join(sel.xpath('a/@title'))  #使用join的好处就是若是没定位到，只会返回空，不会报错
