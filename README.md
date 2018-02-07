@@ -1,2 +1,4 @@
 # crawl_examples
-关于crawl的一些例子，希望把自己会的讲的简单明白，对初学者能有些帮助...
+面向问题的一些crawl例子<br>
+语言：python<br>
+可能涉及的包：requests, urllib，urllib2，scrapy，lxml <br>
