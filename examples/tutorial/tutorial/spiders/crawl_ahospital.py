@@ -23,7 +23,7 @@ class CrawlSpider(scrapy.Spider):
 
     def disease_index(self,response):
         dom = response.xpath('//div[@id="bodyContent"]/p[5]/a')
-        for sel in dom[11:12]:
+        for sel in dom:
             dis_index=''.join(sel.xpath('text()').extract())
             dis_index_url='http://www.a-hospital.com'+''.join(sel.xpath('@href').extract())
             metadata={'dis_index':dis_index}
