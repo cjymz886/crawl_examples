@@ -3,12 +3,7 @@
 import scrapy
 from tutorial.items import AHospitalItem
 import time
-from scrapy.conf import settings
-from scrapy.mail import MailSender
-import logging
-import json
-import random
-import re
+
 
 websit='ahospital'
 
